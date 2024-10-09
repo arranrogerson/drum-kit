@@ -40,31 +40,43 @@ for (var i = 0; i < picArray.length; i++) {
 	// add a listener to the entire document (because there's no associated content on the page to click, just keys to press)
 	document.addEventListener("keydown", function (event) {
 
-		// if the 'a' key is pressed, play the kick sound, etc.
+		// if the 'a' key is pressed, play the kick sound, etc. and animate the key being pressed
 		switch (event.key) {
 			case "a":
 				var kick = new Audio("./sounds/sound1.mp3");
 				kick.play();
+				document.querySelector(".a").classList.add("pressed");
+				setTimeout(function() {document.querySelector(".a").classList.remove("pressed")}, 500);
 			break;
 			case "s":
 				var tomHigh = new Audio("./sounds/sound2.mp3");
 				tomHigh.play();
+				document.querySelector(".s").classList.add("pressed");
+				setTimeout(function() {document.querySelector(".s").classList.remove("pressed")}, 500);
 			break;
 			case "d":
 				var snare = new Audio("./sounds/sound3.mp3");
 				snare.play();
+				document.querySelector(".d").classList.add("pressed");
+				setTimeout(function() {document.querySelector(".d").classList.remove("pressed")}, 500);
 			break;
 			case "j":
 				var crash = new Audio("./sounds/sound4.mp3");
 				crash.play();
+				document.querySelector(".j").classList.add("pressed");
+				setTimeout(function() {document.querySelector(".j").classList.remove("pressed")}, 500);
 			break;
 			case "k":
 				var tomLow = new Audio("./sounds/sound5.mp3");
 				tomLow.play();
+				document.querySelector(".k").classList.add("pressed");
+				setTimeout(function() {document.querySelector(".k").classList.remove("pressed")}, 500);
 			break;
 			case "l":
 				var hiHat = new Audio("./sounds/sound6.mp3");
 				hiHat.play();
+				document.querySelector(".l").classList.add("pressed");
+				setTimeout(function() {document.querySelector(".l").classList.remove("pressed")}, 500);
 			break;
 		}
 		

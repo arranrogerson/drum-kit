@@ -14,47 +14,6 @@ img {
   height: 100px
 }
 
-.w {
-
-}
-
-.a {
-
-}
-
-.s {
-
-}
-
-.d {
-
-}
-
-.j {
-
-}
-
-.k {
-
-}
-
-.l {
-
-}
-
-.pic-container {
-
-}
-
-.key-container {
-
-}
-
-.game-over {
-  background-color: red;
-  opacity: 0.8;
-}
-
 .pressed {
   box-shadow: 0 3px 4px 0 #DBEDF3;
   opacity: 0.5;
@@ -83,13 +42,13 @@ img {
 
 .key {
   outline: none;
-  border: 10px solid darkgoldenrod;
+  border: none;
   font-size: 5rem;
   font-family: sans-serif;
   line-height: 2;
   font-weight: 900;
   color: black;
-  border-radius: 15px;
+  border-radius: 30px;
   display: inline-block;
   width: 150px;
   height: 150px;
